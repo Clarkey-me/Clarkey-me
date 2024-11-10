@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="confirmation.css"> <!-- Link your confirmation CSS here -->
+</head>
+<body>
+    <div class="confirmation-container">
+        <h1>Thank you for your order!</h1>
+
+        <p>Your payment has been successfully processed. Here are the details of your order:</p>
+
+        <h2>Payment Details</h2>
+        <p><span>Name:</span> <span id="confirmName"></span></p>
+        <p><span>Contact Number:</span> <span id="confirmContact"></span></p>
+        <p><span>Address:</span> <span id="confirmAddress"></span></p>
+        <p><span>Landmark:</span> <span id="confirmLandmark"></span></p>
+        <p><span>Postal Code:</span> <span id="confirmPostalCode"></span></p>
+        <p><span>Payment Method:</span> <span id="confirmPaymentMethod"></span></p>
+
+        <h2>Cart Details</h2>
+        <table id="cartItemsTable">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="cartItems"></tbody>
+        </table>
+
+        <p><span>Total Amount: </span><span id="totalAmount"></span></p>
+    </div>
+
+    <script src="confirmation.js"></script>
+</body>
+</html>
